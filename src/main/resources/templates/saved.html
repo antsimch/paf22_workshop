@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>RSVP</h1>
+        <hr>
+        
+        <div th:object="${rsvp}">
+            <p>
+                Name:
+                <br>
+                <span th:text="*{fullName}"></span>
+            </p>
+
+            <br>
+            <p>
+                Email:
+                <br>
+                <span th:text="*{email}"></span>
+            </p>
+
+            <br>
+            <p>
+                Phone:
+                <br>
+                <span th:text="*{phone}"></span>
+            </p>
+
+            <br>
+            <p>
+                Confirmation Date:
+                <br>
+                <span th:text="*{confirmationDate}"></span>
+            </p>
+
+            <br>
+            <p>
+                Comments:
+                <br>
+                <span th:text="*{comments}"></span>
+            </p>
+        </div>
+    </body>
+</html>
